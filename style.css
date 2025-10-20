@@ -33,11 +33,41 @@ body {
   font-family: "Outfit", sans-serif;
   background-color: var(--background);
   color: var(--secondary);
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: var(--spacing-sm);
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 288px;
+}
+
+.card-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-text {
+  text-align: center;
 }
 
 .attribution {
+  position: absolute;
   font-size: 11px;
   text-align: center;
+  bottom: 2rem;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
